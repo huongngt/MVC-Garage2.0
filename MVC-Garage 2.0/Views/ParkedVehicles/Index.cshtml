@@ -1,0 +1,14 @@
+﻿@model MVC_Garage_2._0.Models.ViewModels.PagedVehicle
+
+@{
+    ViewBag.Title = "Parked vehicles";
+}
+
+<h2>List of parked vehicles</h2>
+
+<p>
+    @Html.ActionLink("Park new vehicle", "Park")
+</p>
+
+
+    @Html.Partial("PagedVehicleList")
